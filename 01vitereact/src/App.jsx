@@ -1,7 +1,14 @@
+import Shahid from "./Shahid"
+import Second from "./shahid-2"
+
 function App() {
 
   return (
-   <h1>React with vite | Shahid.</h1>
+    <>
+    <Shahid/>
+    <h3>here we use multiple elements in .jsx file</h3>
+    <Second/>
+    </>
   )
 }
 
