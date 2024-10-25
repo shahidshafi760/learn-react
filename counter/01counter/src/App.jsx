@@ -12,6 +12,9 @@ const [Counts, setCounts] = useState(0)
     
     setCounts (Counts + 1)
   }
+  function removeValue(){
+    setCounts (Counts - 1)
+  }
 
   return (
     <>
@@ -20,7 +23,7 @@ const [Counts, setCounts] = useState(0)
       <button onClick={addValue}
       >Increase click</button>
       <br /><br />
-      <button>Decrease click</button>
+      <button onClick={removeValue}>Decrease click</button>
     </>
   )
 }
