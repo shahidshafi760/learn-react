@@ -8,20 +8,27 @@ const [Counts, setCounts] = useState(0)
   // let Counts = 1;
 
   function addValue(){
-    console.log("clicked" , Counts);
+
+    if(Counts >= 10) return;
+    
+    // console.log("clicked" , Counts);
     
     setCounts (Counts + 1)
   }
   function removeValue(){
+    if(Counts <= 0) return;
+
     setCounts (Counts - 1)
   }
+
+
 
   return (
     <>
     <h1>Code with shahid</h1>
     <h2>Count value {Counts}</h2>
       <button onClick={addValue}
-      >Increase click</button>
+>Increase click</button>
       <br /><br />
       <button onClick={removeValue}>Decrease click</button>
     </>
